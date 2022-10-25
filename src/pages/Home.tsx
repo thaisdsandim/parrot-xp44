@@ -1,9 +1,9 @@
-
+import NewPost  from "../components/NewPost";
 
 function Home() {
     return (
         <div>
-            <h1>Página Inicial</h1>
+            <NewPost />
         </div>
     )
 }

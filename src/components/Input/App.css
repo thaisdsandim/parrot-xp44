@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family-Questrial&display-swap');
+
+body {
+    background-image: url(/src/assets/background.png);
+    background-size: cover;
+    font-family: "Questrial";
+}

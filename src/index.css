@@ -7,25 +7,11 @@
 a {
   text-decoration: none
 }
-a:hover {
-  color: #535bf2;
-}
 
 body {
   font-size: 16px;
   font-family: 'Questrial', sans-serif;
 }
-
-.container {
-  max-width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  margin: 0 auto;
-  
-  background-repeat: no-repeat;
-}
-
-
 
 label {
   display: block;

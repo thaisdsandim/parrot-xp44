@@ -21,6 +21,7 @@ export const Nav = styled.nav`
     font-size: 24px;
     line-height: 25px;
     color: #76bb4c;
+    text-decoration: none;
   }
 
   & .btn-goBack {
@@ -28,5 +29,6 @@ export const Nav = styled.nav`
     font-size: 16px;
     line-height: 16px;
     color: #6033aa;
+    text-decoration: none;
   }
 `;

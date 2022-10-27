@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import brothers from "../assets/brothers.json";
 import Post from "../components/Post";
 import Detalhes from "../components/DetalhesPerfil";
+import userList from "../assets/user.json";
 
 interface PerfilProps {
 
@@ -13,7 +14,7 @@ const Perfil = (props: PerfilProps) => {
     const { vizinhanca } = brothers;
 
     const { id } = useParams();
-
+    const { users } = userList;
     const usuarios = vizinhanca.filter(vizinho => vizinho.id === Number(id));
 
     const posts = usuarios.length;
@@ -22,7 +23,8 @@ const Perfil = (props: PerfilProps) => {
     
     return (
         <>
-            <Header />
+            <Header 
+            userName={users.find((user) => String(user.id) == id)?.name} />
             <Detalhes nome={dadosIndex.nome} apartment={dadosIndex.apartment} email={dadosIndex.email} id={Number(id)} posts={posts} />
 
             {usuarios.map((usuario) => (

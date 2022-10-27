@@ -7,7 +7,7 @@ import brothers from "../assets/brothers.json";
 
 
 function Home() {
-  const { idUser } = useParams();
+  const { id } = useParams();
   const { users } = userList;
 
   const { vizinhanca } = brothers;
@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <Header
-        userName={users.find((user) => String(user.id) == idUser)?.name}
+        userName={users.find((user) => String(user.id) == id)?.name}
       />
       <NewPost />
 

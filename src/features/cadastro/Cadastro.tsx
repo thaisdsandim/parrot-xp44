@@ -1,11 +1,11 @@
-import BoxCadastro from "./components/BoxCadastro";
+import Register from "./components/BoxCadastro";
 
 type CadastroProps = {};
 
 const Cadastro = (props: CadastroProps) => {
   return (
     <div>
-      <BoxCadastro />
+      <Register />
     </div>
   );
 };

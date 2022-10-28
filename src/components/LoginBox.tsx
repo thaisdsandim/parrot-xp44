@@ -4,7 +4,7 @@ import Input from "./Input";
 
 function BoxLogin() {
   return (
-    <div className="bg-img">
+    <div className="">
       <div className="box-container">
         <div className="container-itens">
           <div className="logo">
@@ -16,7 +16,7 @@ function BoxLogin() {
           <Input name="email" label="" type="email" placeholder="email"/>
           <Input name="senha" label="" type="password" placeholder="senha"/>
 
-            <Button text="entrar"/>
+            <Button text="entrar" type={"button"} value={""}/>
           </form>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { Dados, DetalhesStyle, EditarPerfil } from "./DetalhesPerfil.style";
-import avatar from "../assets/img/avatar.png";
-
+import avatar from "../assets/avatar.png"
 
 type DetalhesProps = {
     id: number;

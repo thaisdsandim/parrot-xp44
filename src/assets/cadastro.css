@@ -1,0 +1,18 @@
+.form {
+  background-image: url("src/features/cadastro/assets/background.png");
+}
+
+img {
+  max-width: 171px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+.box-form input {
+  margin-bottom: 25px;
+}

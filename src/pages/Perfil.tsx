@@ -4,6 +4,7 @@ import brothers from "../assets/brothers.json";
 import Post from "../components/Post";
 import Detalhes from "../components/DetalhesPerfil";
 import userList from "../assets/user.json";
+import WtPost from "../components/WithoutPost";
 
 interface PerfilProps {
 
@@ -20,19 +21,26 @@ const Perfil = (props: PerfilProps) => {
     const posts = usuarios.length;
 
     const dadosIndex = usuarios[0];
-    
+
     return (
         <>
-            <Header 
-            userName={users.find((user) => String(user.id) == id)?.name} />
+            <Header
+                userName={users.find((user) => String(user.id) == id)?.name} />
             <Detalhes nome={dadosIndex.nome} apartment={dadosIndex.apartment} email={dadosIndex.email} id={Number(id)} posts={posts} />
 
-            {usuarios.map((usuario) => (
-                <Post key={id} id={Number(id)} nome={usuario.nome} timestamp={usuario.timestamp} apartment={usuario.apartment} post={usuario.post} />))}
-
+            {posts > 0 ? (
+                <>
+                    {usuarios.map((usuario) => (
+                        <Post key={id} id={Number(id)} nome={usuario.nome} timestamp={usuario.timestamp} apartment={usuario.apartment} post={usuario.post} />))}
+                </>
+            ) :
+                <>
+                    <WtPost />
+                </>
+            }
         </>
-    )
+    );
 
-}
+};
 
 export default Perfil;
